@@ -1,0 +1,177 @@
+body{
+    background-image: url("../pics/backgrounds/bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.centre {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+
+h1{
+    text-align: center;
+    font-family:serif;
+    color:rgb(202, 169, 110);
+    font-size:80px;
+    text-shadow: 10px 10px 10px rgb(182, 154, 107,0.6);
+    border: 2px solid rgb(202, 169, 110);
+    border-radius: 25px;
+    margin: 0px 430px 10px 400px;
+    padding:20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#vendre{
+    text-align:center;
+    font-family:serif;
+    color:rgb(202,169,110);
+    font-size:50px;
+    border:2px solid rgb(202,169,110);
+    border-radius:25px;
+    padding:20px;
+    width:80%;
+    max-width:900px;
+    margin:20px auto;
+    background-color:rgba(255,255,255,0.3);
+}
+
+
+.centre > p{
+    font-size: 50px;
+    font-family:serif;
+    color:black;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration:none;
+}
+
+form >p{
+    font-size: 25px;
+    color:rgb(115, 77, 39);
+    font-family: serif;
+    border-bottom: 2px solid rgb(202, 169, 110);
+    text-align: center;
+    text-decoration:none;
+    margin-top:0px;
+    padding-bottom:15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+}
+input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 20px;
+}
+input:focus{
+    border:none;
+    outline: none;
+}
+fieldset{
+    border: 2px solid rgb(202, 169, 110);
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+fieldset:focus-within{
+    outline: none;
+    box-shadow: 5px 5px 15px rgb(202, 169, 110);
+}
+
+legend , label{
+    font-size: 18px;
+    font-family: serif;
+    color: rgb(202, 169, 110);
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+input[type="radio"]{
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    background-color:transparent;
+    color: black;
+    border-radius: 20px;
+    border: 2px solid rgb(202, 169, 110);
+    position:relative;
+    left: 75%;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: rgb(202, 169, 110);
+    color: white;
+    font-size:15px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgb(202, 169, 110, 0.8);
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.5);
+}
+
+.messages{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 20px;
+    border-top: 2px solid rgb(202, 169, 110);
+    border-bottom: 2px solid rgb(202, 169, 110);
+    margin:50px;
+    position:relative;
+    right:4%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+a:link{
+    text-shadow: 2px 2px 5px rgb(202, 169, 110);
+    color: rgb(115, 77, 39);
+}
+a:visited{
+    color: rgb(115, 77, 39);
+}
+
+@media screen and (max-width: 768px) {
+    .centre {
+         width: 90%;
+    }
+    h1 {
+        font-size: 50px;
+        margin: 0px 20px 10px 20px;
+    }
+    .centre > p {
+        font-size: 30px;
+    }
+    form > p {
+        font-size: 20px;
+    }
+    fieldset {
+        padding: 10px;
+    }
+    legend, label {
+        font-size: 16px;
+    }
+    button {
+        width: 120px;
+        height: 35px;
+        left: 70%;
+    }
+    #vendre{
+        width: 90%;
+        font-size: 30px;
+        padding: 15px;
+        margin: 20px auto;
+    }
+}   
