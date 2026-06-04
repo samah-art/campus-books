@@ -80,7 +80,9 @@ LocalStorage       Sauvegarde du panier
 |	panier.js
 |	produits.js
 |	vendre.js
-├── images/ (images utilisées)
+├── pics/ (images utilisées)
+|	|---Books(images des livres)
+|	|---backgrounds(images de la mise en page du site)
 ├── readme.txt (description du site)
 
 -------------📌Les membres du groupe:---------
