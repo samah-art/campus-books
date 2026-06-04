@@ -2,7 +2,10 @@
 
 ---------------📌Description du projet:-----------------------------
 
-	Campus Books est un site E-commerce de vente de livres (neufs ou déjà utilisés) destinés aux étudiants universitaire en Informatique, le site offre l'avantage aux étudiants de vendre leurs résumés, livres, polycopies des années précédentes; et d'un autres coté aider les étudiants à retrouver les ressources nécessaires pour la réussite de leur année facilement et rapidement ici dans notre site crée par des étudiants, pour des étudiants!
+	Campus Books est un site E-commerce de vente de livres (neufs ou déjà utilisés) destinés aux étudiants universitaire en Informatique, 
+le site offre l'avantage aux étudiants de vendre leurs résumés, livres, polycopies des années précédentes; et d'un autres
+coté aider les étudiants à retrouver les ressources nécessaires pour la réussite de leur année facilement et rapidement
+ici dans notre site crée par des étudiants, pour des étudiants!
 
 
 --------------📌Schéma général du site:---------------------------
