@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PAGE INSCRIPTION</title>
+        <link rel="stylesheet" href="../style/formulaire.css">
+    </head>
+        <body>
+            <h1>Inscription</h1>
+            <div class="centre ">
+            <form action="#" method="post">  
+                <p>Veuillez saisir vos identifiant </p>
+                <fieldset>
+                    <legend>Nom:</legend>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom:">
+                </fieldset>
+                <fieldset>
+                    <legend>Prénom:</legend>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom:">
+                </fieldset>
+                <fieldset>
+                    <legend>Email:</legend>
+                    <input type="email" id="email" name="email" placeholder="exemple@gmail.com"> 
+                </fieldset>
+                <fieldset>
+                    <legend>Numéro de téléphone:</legend>
+                    <input type="tel" id="numero" name="numero" placeholder="+213 XXXXXXXXX">
+                </fieldset>
+                <fieldset>
+                    <legend>Mot de passe:</legend>
+                    <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe:">
+                </fieldset>
+                <fieldset>
+                    <legend>Confirmer le mot de passe:</legend>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmez votre mot de passe:">
+                </fieldset>
+                <fieldset>
+                    <legend>Genre:</legend>
+                    <input type="radio" id="homme" name="genre" value="homme">
+                    <label for ="homme">Homme</label>
+                    <br>
+                    <input type="radio" id="femme" name="genre" value="femme">
+                    <label for="femme">Femme</label>
+                </fieldset>
+                <fieldset>
+                    <legend>niveau d'étude:</legend>
+                    <select id="niveau" name="niveau">
+                        <option value="Licence">Licence</option>
+                        <option value="Master">Master</option>
+                        <option value="Doctorat">Doctorat</option>
+                    </select>
+                </fieldset>
+                <br>
+                
+                <button type="submit">inscrire</button>
+            </form>
+        </div>
+        <script src="../javascript/formulaire.js"></script>
+    </body>
+</html>
