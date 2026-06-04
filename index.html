@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE ACCUEIL</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <!--menu de navigation-->
+    <div class="contain">
+        <div class="menu-nav">
+            <nav>
+                <div class="menu-btn" id="menuBtn">
+                    ☰
+                </div>
+            </nav>
+            <div class="menu" id="menu">
+                <a href="index.html">Accueil</a>
+                <a href="content/connexion.html" target="_blank">Connexion</a>
+                <a href="content/produits.html">Tous les livres</a>
+                <a href="content/vendre.html" target="_blank">Vendre</a>
+                <a href="#help">Help</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="recherche ">
+            <input type="text" id="recherche" placeholder="Rechercher...">
+            <button type="submit">🔎</button>
+        </div>
+        <div class="panier">
+            <a href="content/panier.html" class="cart-icon">
+                    <img src="pics/backgrounds/book.png" width="80" height="80" id="img-panier">
+                    <span id="cartCount">0</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="image-accueil">
+        <img src="pics/backgrounds/livvreAcueil.png" alt="Image d'accueil">
+    </div>
+    <!--haut-->
+    <!--h1>Campus</h1>
+    <p id="desc">UMMTO LIB rassemble tout le nécessaire pour réussir vos études en informatique : livres scolaires, résumés de cours et ressources utiles. Achetez, partagez et valorisez vos propres contenus au sein d'une communauté étudiante.</p>
+-->
+    <!--livres-->
+    <h2>Best sellers: </h2>
+    <div class="slider-container">
+        <button class="arrow left" onclick="scrollBooks(-0.5)">❮</button>
+
+        <div class="books-wrapper" id="booksWrapper">
+            <div class="books">
+                <figure class="book">
+                    <img src="pics/BOOKS/L1_ANALYSE1.jpg" alt="livre analyse 1 version 1" width="200" height="200"> 
+                    <figcaption>
+                        <b>Livre d'analyse 1 (version 1)</b><br>
+                        <span class="prix">1500 DA</span>
+                    </figcaption>
+                    <button class="add-to-cart" onclick="addToCart('Livre d\'analyse 1 (version 1)', 1500)">Ajouter au panier</button>
+                </figure>
+           
+                <figure class="book">
+                    <img src="pics/BOOKS/L1_ASD1.jpg" alt="livre d'ASD 1" width="200" height="200"> 
+                    <figcaption>
+                        <b>Livre d'ASD 1 </b><br>
+                        <span class="prix">1000 DA</span>
+                    </figcaption>
+                    <button class="add-to-cart" onclick="addToCart('Livre d\'ASD 1 ', 1000)">Ajouter au panier</button>
+                </figure>
+             
+                <figure class="book">
+                    <img src="pics/BOOKS/L1_SM1.jpg" alt="livre de SM 1" width="200" height="200"> 
+                    <figcaption>
+                        <b>Livre de SM 1</b><br>
+                        <span class="prix">1000 DA</span>
+                    </figcaption>
+                    <button class="add-to-cart" onclick="addToCart('Livre de SM 1', 1000)">Ajouter au panier</button>
+                </figure>
+                
+                <figure class="book">
+                    <img src="pics/BOOKS/L1_ALGEBRE2.jpg" alt="livre d'Algèbre 2" width="200" height="200"> 
+                    <figcaption>
+                        <b>Livre d'Algèbre 2</b><br>
+                        <span class="prix">1200 DA</span>
+                    </figcaption>
+                    <button class="add-to-cart" onclick="addToCart('Livre d\'Algèbre 2', 1200)">Ajouter au panier</button>
+                </figure>
+                
+                <figure class="book">
+                    <img src="pics/BOOKS/L2_REZ.jpg" alt="livre de réseaux informatiques" width="200" height="200"> 
+                    <figcaption>
+                        <b>Livre de Réseaux Informatiques</b><br>
+                        <span class="prix">1000 DA</span>
+                    </figcaption>
+                    <button class="add-to-cart" onclick="addToCart('Livre de Réseaux Informatiques', 1000)">Ajouter au panier</button>
+                </figure>
+                
+                <figure class="book">
+                    <img src="pics/BOOKS/L2_THL.jpg" alt="livre de théorie des langages" width="200" height="200"> 
+                    <figcaption>
+                        <b>Livre de Théorie des Langages</b><br>
+                        <span class="prix">1000 DA</span>
+                    </figcaption>
+                    <button class="add-to-cart" onclick="addToCart('Livre de Théorie des Langages', 1000)">Ajouter au panier</button>
+                </figure>
+            </div>
+        </div> 
+
+        <button class="arrow right" onclick="scrollBooks(0.5)">❯</button>
+    </div>
+
+    <h2>Your sellers :</h2>
+
+<div class="slider-container sellers-slider">
+    <button class="arrow left" onclick="scrollSellers(-0.5)">❮</button>
+
+    <div class="books-wrapper" id="sellersWrapper">
+        <div class="books">
+            <figure class="book">
+                <img src="pics/BOOKS/RESUME_DEV (1).jpg" alt="resumé de développement web" width="200" height="200">
+                <figcaption>
+                    <b>RESUMÉ DE DÉVELOPPEMENT WEB</b><br>
+                    <span class="prix">sold</span>
+                </figcaption>
+            </figure>
+
+            <figure class="book">
+                <img src="pics/BOOKS/COURS_BDD.jpg" alt="cours de base de données" width="200" height="200">
+                <figcaption>
+                    <b>COURS DE BASE DE DONNÉES</b><br>
+                    <span class="prix">500 DA</span>
+                </figcaption>
+                <button class="add-to-cart" onclick="addToCart('COURS DE BASE DE DONNÉES', 500)">Ajouter au panier</button>
+            </figure>
+
+            <figure class="book">
+                <img src="pics/BOOKS/RESUME_REZ.jpg" alt="resumé de réseaux informatiques" width="200" height="200">
+                <figcaption>
+                    <b>RESUMÉ DE RÉSEAUX INFORMATIQUES</b><br>
+                    <span class="prix">500 DA</span>
+                </figcaption>
+                <button class="add-to-cart" onclick="addToCart('RESUMÉ DE RÉSEAUX INFORMATIQUES', 500)">Ajouter au panier</button>
+            </figure>
+
+            <figure class="book">
+                <img src="pics/BOOKS/COURS_MN.jpg" alt="cours de mathodes numeriques" width="200" height="200">
+                <figcaption>
+                    <b>COURS DE MATHODES NUMERIQUES</b><br>
+                    <span class="prix">500 DA</span>
+                </figcaption>
+                <button class="add-to-cart" onclick="addToCart('COURS DE MATHODES NUMERIQUES', 500)">Ajouter au panier</button>
+            </figure>
+        </div>
+    </div>
+
+    <button class="arrow right" onclick="scrollSellers(0.5)">❯</button>
+</div>
+
+    <div class="container">
+        <div class="gauche">
+            <h2 id="help">Help</h2>
+            <a href="content/aide.html#inss" target="_blank">Comment s'inscrire?</a><br>
+            <a href="content/aide.html#cmmd" target="_blank">Comment passer ma commande?</a><br>
+            <a href="content/aide.html#sll" target="_blank">Comment vendre mes ressources?</a><br>
+        </div>
+        <div class="droit">
+            <h2 id="contact">Contact</h2>
+            <a href="ppp">gmail</a>
+            <p>07xxxxxx</p>
+        </div>
+    </div>
+
+    <script src="javascript/index.js""></script>
+
+</body>
+</html>
