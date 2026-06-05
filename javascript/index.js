@@ -62,3 +62,23 @@ function scrollSellers(direction){
         behavior: "smooth"
     });
 }
+// Gestion connexion / déconnexion
+
+const btnConnexion = document.getElementById("btnConnexion");
+const btnDeconnexion = document.getElementById("btnDeconnexion");
+
+if (localStorage.getItem("isLoggedIn") === "true") {
+    btnConnexion.style.display = "none";
+    btnDeconnexion.style.display = "block";
+}
+
+btnDeconnexion.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    localStorage.removeItem("isLoggedIn");
+
+    btnConnexion.style.display = "block";
+    btnDeconnexion.style.display = "none";
+
+    window.location.reload();
+});
